@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1.6;
+  font-family: sans-serif;
+  background-color: #26222e;
+  color: #fff;
+}
+
+#navbar {
+  background-color: #2e2a36;
+  border-right: double #26222e;
+}
+
+#navbar h1 {
+  padding: 1.2em 0;
+  border-bottom: solid #26222e;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+}
+#navbar ul {
+  list-style: none;
+  margin: 5px 0;
+  width: 100%;
+  max-height: 230px;
+  overflow-y: auto;
+}
+#navbar ul li {
+  padding: 0.5em 2em;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+#navbar ul li .nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+#navbar ul li .nav-link:hover {
+  color: #8ea4c5;
+}
+.notice {
+  display: inline-block;
+  width: 100%;
+  padding: 0.4em;
+  margin: auto;
+  text-align: center;
+  background-color: #3a3442;
+}
+.notice img {
+  width: 4.2rem;
+}
+#main-doc {
+  width: 100%;
+  padding: 2.5em;
+  padding-top: 1.2rem;
+}
+#main-doc .main-section h2 {
+  text-align: left;
+  border: none;
+  font-size: 2em;
+  padding: 10px 0;
+}
+.main-section {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+.main-section p {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+.main-section code {
+  background-color: #3a3442;
+  width: 100%;
+  display: inline-block;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  color: #bbb8b3;
+  font-size: 0.9rem;
+  border-radius: 0.3rem;
+}
+.main-section code .code-element {
+  color: #6161c0;
+}
+.main-section code .code-attr {
+  color: #e2ac18;
+}
+.main-section code .code-attr-value {
+  color: #6bb418;
+}
+.main-section code pre {
+  line-height: 1.5rem;
+  white-space: pre-wrap;
+}
+
+.main-section ol,
+.main-section ul {
+  margin: 1rem;
+  padding: 1rem;
+}
+.main-section ol li,
+.main-section ul li {
+  margin-bottom: 1rem;
+}
+.main-section .box {
+  font-family: Consolas, monospace;
+  background-color: #3a3442;
+  color: #d6d3ce;
+  border-radius: 0.25rem;
+  padding: 0.15rem;
+}
+
+@media (min-width: 769px) {
+  #navbar {
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+  }
+  .notice {
+    margin-left: 280px;
+    width: calc(100% - 280px);
+    padding: 1 rem 0 0 2rem;
+  }
+
+  #main-doc {
+    margin-left: 280px;
+    width: calc(100% - 280px);
+  }
+  #navbar ul {
+    max-height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  #navbar ul {
+    display: none;
+  }
+
+  #navbar {
+    position: sticky;
+    top: 0;
+  }
+}
