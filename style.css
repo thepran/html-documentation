@@ -75,7 +75,7 @@ body {
 .main-section code {
   background-color: #3a3442;
   width: 100%;
-  display: inline-block;
+  display: block;
   padding: 1.2rem;
   margin: 1rem 0;
   color: #bbb8b3;
