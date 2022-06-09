@@ -81,6 +81,7 @@ body {
   color: #bbb8b3;
   font-size: 0.9rem;
   border-radius: 0.3rem;
+  overflow-x: scroll;
 }
 .main-section code .code-element {
   color: #6161c0;
@@ -141,5 +142,11 @@ body {
   #navbar {
     position: sticky;
     top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #main-doc {
+    padding: 1rem;
   }
 }
